@@ -13,7 +13,6 @@
 
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       background-color: #f4f4f4;
       color: #333;
     }
@@ -23,6 +22,11 @@
       color: gold;
       padding: 20px 0;
       text-align: center;
+    }
+
+    header img {
+      max-width: 100px;
+      margin-bottom: 10px;
     }
 
     nav {
@@ -66,6 +70,17 @@
       border-left: 5px solid gold;
     }
 
+    .contact a {
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+      color: gold;
+    }
+
     footer {
       background-color: #000;
       color: gold;
@@ -78,12 +93,17 @@
         display: block;
         margin: 10px 0;
       }
+
+      header img {
+        max-width: 80px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="logo.png" alt="AceVoltTech Logo" />
     <h1>AceVoltTech</h1>
     <p>Your Local IT Service Experts in Billerica, MA</p>
   </header>
@@ -111,7 +131,7 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
       <h2>Contact Us</h2>
       <p>Email: <a href="mailto:info@acevolttech.com">info@acevolttech.com</a></p>
       <p>Phone: <a href="tel:+19780001234">(978) 000-1234</a></p>
@@ -125,5 +145,3 @@
 
 </body>
 </html>
-
-
